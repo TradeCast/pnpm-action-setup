@@ -4,6 +4,8 @@ import { Inputs } from '../inputs'
 import { patchPnpmEnv } from '../utils'
 
 export function pruneStore(inputs: Inputs) {
+  console.log('custom fork');
+  return;
   if (inputs.runInstall.length === 0) {
     console.log('Pruning is unnecessary.')
     return
